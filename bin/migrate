@@ -172,7 +172,7 @@ var commands = {
  */
 
 function create(name) {
-  var path = join('migrations', name + '.js');
+  var path = join('migrations', name + '.es6');
   log('create', join(process.cwd(), path));
   fs.writeFileSync(path, template);
 }
